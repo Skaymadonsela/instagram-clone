@@ -7,7 +7,7 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-       
+      
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
@@ -106,12 +106,24 @@
                 </div>
               </div>
               <div class="profile-pic margin-left">
+
+                <div class="logout-btn-container">
+                  <button class="logout-btn">Log out
+                    
+                  </button>
+                <!-- end logout-btn-container-->
+                </div>
+              
                 <img
                   alt="imharjotsingh's profile picture"
                   data-testid="user-avatar"
                   draggable="false"
                   src="assets/akhil.png"
                 />
+
+                
+
+                </div>
               </div>
             </div>
           </div>
@@ -1098,5 +1110,38 @@
         </div>
       </main>
     </div>
+
+    <!-- initializeApp -->
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
+    <!-- getAnalytics -->
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js"></script>
+
+    <!-- Your web app's Firebase configuration-->
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyDUoSySwS5xn8S2zRBwrlv5B3achwdwz0w",
+        authDomain: "instagram-clone-e4d40.firebaseapp.com",
+        projectId: "instagram-clone-e4d40",
+        storageBucket: "instagram-clone-e4d40.appspot.com",
+        messagingSenderId: "379420720905",
+        appId: "1:379420720905:web:5d731abadda77a48e65dd8",
+        measurementId: "G-R6CMFB4SFX"
+      };
+
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      console.log(firebase);
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"
+      integrity="sha512-AvtLzKgbVcTZJ0QZ3nLJoTGN2wiE/emjebM9xneyqhtEBRTsNB+8oeQGkOmyOF+gnJd7k3Zvnghs9m6EuTpTEw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+
+
   </body>
 </html>
